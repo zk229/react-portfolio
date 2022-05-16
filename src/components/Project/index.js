@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import SingleProject from "./SingleProject";
 
-function Project() {
+function Project(props) {
     return (
         <div>
             
