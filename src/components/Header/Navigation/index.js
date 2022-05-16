@@ -9,7 +9,7 @@ function Navigation(props) {
             <ul>
                 {
                     options.map((option) => (
-                        <li>
+                        <li key={option}>
                             <span onClick={() => setSelection(option.toLowerCase())}>{option}</span>
                         </li>
                     ))

@@ -4,11 +4,11 @@ function SingleProject(props) {
     const project = props.project;
 
     return (
-        <div>
-            <a href={project.url}>
-                <h3>{project.name}</h3>
+            <a href={project.url} className="work" style={{ backgroundImage: `url(/img/box-${project.id}.png)`}}>
+                <div className="work-title">
+                    <h4>{project.name}</h4>
+                </div>
             </a>
-        </div>
     );
 }
 

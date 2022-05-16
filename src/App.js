@@ -11,14 +11,15 @@ function App() {
       name: "COVID EXPosure",
       url: "https://zk229.github.io/covid-exposure/",
       repository: "https://github.com/zk229/covid-exposure",
-      technologies: ["HTML", "CSS", "JS", "jQuery"]
+      technologies: ["HTML", "CSS", "JS", "jQuery"],
+      id: 0
     }
   ]);
 
   const [selection, setSelection] = useState("about");
 
   return (
-    <div>
+    <>
       <Header selection={selection} setSelection={setSelection} />
       <main>
         {
@@ -30,7 +31,7 @@ function App() {
         }
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

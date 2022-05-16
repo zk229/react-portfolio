@@ -2,9 +2,13 @@ import React, { useState } from "react";
 
 function Footer() {
     return (
-        <div>
-            
-        </div>
+        <footer>
+            <h2>Made by zk229</h2>
+            <div>
+                <a href="/">Check Out My Portfolio!</a><br />
+                &copy; 2022 zk229
+            </div>
+        </footer>
     );
 }
 

@@ -1,13 +1,203 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #4895ef;
+  --secondary-color: #d3c3d1;
+  --tertiary-color: #7209b7;
+}
+body {
+  color: var(--secondary-color);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  padding: 20px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("./assets/banner.jpg");
+  z-index: 9999;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--secondary-color);
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+header a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+header nav {
+  margin: 7px 0;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+header nav ul li:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+section {
+  padding: 60px;
+}
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.work {
+  width: 49.5%;
+  text-align: center;
+  margin: 5px 0;
+  opacity: 0.5;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.work:hover {
+  opacity: 1;
+}
+.work-title {
+  float: left;
+  background-color: rgba(36, 123, 160, 0.8);
+  padding: 20px;
+  border: solid 3px var(--tertiary-color);
+  width: 25%;
+  text-align: center;
+  margin: 5%;
+  margin-top: 10%;
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.work-title p {
+  font-size: 14px;
+}
+.work .work-title {
+  width: 50%;
+}
+
+footer {
+  background: var(--primary-color);
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 0;
+}
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+footer a {
+  color: var(--secondary-color);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOPS */
+@media screen and (max-width: 980px) {
+  header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+  }
+  header h1 {
+      width: 100%;
+      text-align: center;
+  }
+  header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+  }
+  header nav ul li {
+      font-size: 24px;
+  }
+  footer h2, footer div {
+      text-align: center;
+      width: 100%;
+  }
+  .hero-text {
+      width: 100%;
+  }
+  .section-title {
+      width: 80%;
+  }
+  address div {
+      flex: 0;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS */
+@media screen and (max-width: 768px) {
+  section {
+      padding: 30px 15px;
+  }
+  .section-title {
+      width: 100%;
+      border-bottom: solid 3px var(--tertiary-color);
+      border-right: none;
+      flex: 0 100%;
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+  }
+  .intro {
+      justify-content: center;
+  }
+  .work {
+      width: 100%;
+  }
+  .work-title {
+      width: 50%;
+  }
+  .works {
+      justify-content: center;
+  }
+  .contact {
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header nav ul li {
+    font-size: 24px;
+}
+  .section-text {
+      text-align: center;
+  }
+  address a {
+      width: 80%;
+  }
+  address p {
+      width: 80%;
+  }
 }

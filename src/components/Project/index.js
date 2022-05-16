@@ -5,10 +5,10 @@ function Project(props) {
     const projects = props.projects;
     
     return (
-        <section>
+        <section className={"my-work"}>
             {
                 projects.map((project) => (
-                    <SingleProject project={project} />
+                    <SingleProject key={project} project={project} />
                 ))
             }
         </section>
