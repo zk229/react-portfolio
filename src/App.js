@@ -24,7 +24,7 @@ function App() {
         {
           {
             "about": <About />,
-            "project": <Project projects={projects} />,
+            "projects": <Project projects={projects} />,
             "contact": <Contact />
           }[selection]
         }

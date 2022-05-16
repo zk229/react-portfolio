@@ -8,6 +8,7 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
 
+    // for now, data is not submitted
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
@@ -38,7 +39,7 @@ function Contact() {
 
     return (
         <section>
-            <h1 data-testid="h1tag">Contact me</h1>
+            <h1>Contact me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -57,7 +58,7 @@ function Contact() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button data-testid="button" type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </section>
     );

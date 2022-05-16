@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Navigation from "./Navigation";
 
 function Header(props) {
+    const { selection, setSelection } = props;
+    
     return (
-        <div>
-          <Navigation />  
-        </div>
+        <header>
+          <Navigation selection={selection} setSelection={setSelection} />  
+        </header>
     );
 }
 

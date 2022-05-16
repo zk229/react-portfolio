@@ -1,10 +1,21 @@
 import React, { useState } from "react";
 
-function Navigation() {
+function Navigation(props) {
+    const { selection, setSelection } = props;
+    const options = ["About", "Projects", "Contact"]
+
     return (
-        <div>
-            
-        </div>
+        <nav>
+            <ul>
+                {
+                    options.map((option) => (
+                        <li>
+                            <span onClick={() => setSelection(option.toLowerCase())}>{option}</span>
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
     );
 }
 
