@@ -9,17 +9,45 @@ import Resume from "./components/Resume";
 function App() {
   const [projects] = useState([
     {
+      name: "Social Network API",
+      url: "https://github.com/zk229/social-network-api",
+      repository: "https://github.com/zk229/social-network-api",
+      technologies: ["MongoDB", "Express"],
+      id: 1
+    },
+    {
       name: "Macro-Matics",
       url: "https://macro-matics.herokuapp.com",
       repository: "",
-      technologies: ["MySQL", "Sequelize", "Node.js"],
+      technologies: ["MySQL", "Sequelize", "Node", "Express"],
       id: 2
+    },
+    {
+      name: "eCommerce Backend",
+      url: "https://github.com/zk229/ecommerce-backend",
+      repository: "https://github.com/zk229/ecommerce-backend",
+      technologies: ["MySQL", "Express", "Sequelize", "Node"],
+      id: 5
+    },
+    {
+      name: "Employee Tracker",
+      url: "https://github.com/zk229/employee-tracker",
+      repository: "https://github.com/zk229/employee-tracker",
+      technologies: ["Node", "MySQL"],
+      id: 3
+    },
+    {
+      name: "README Generator",
+      url: "https://github.com/zk229/readme-generator",
+      repository: "https://github.com/zk229/readme-generator",
+      technologies: ["Node"],
+      id: 4
     },
     {
       name: "Team Generator",
       url: "https://github.com/zk229/team-profile",
       repository: "https://github.com/zk229/team-profile",
-      technologies: ["Node.js", "HTML"],
+      technologies: ["Node", "HTML"],
       id: 6
     },
     {
@@ -28,6 +56,13 @@ function App() {
       repository: "https://github.com/zk229/covid-exposure",
       technologies: ["HTML", "CSS", "JS", "jQuery"],
       id: 7
+    },
+    {
+      name: "Work Day Scheduler",
+      url: "https://zk229.github.io/work-scheduler/",
+      repository: "https://github.com/zk229/work-scheduler",
+      technologies: ["HTML", "CSS", "JS"],
+      id: 8
     },
     {
       name: "Weather Dashboard",
