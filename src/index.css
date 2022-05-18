@@ -9,8 +9,10 @@
   --tertiary-color: #7209b7;
 }
 body {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--secondary-color);
+  min-height: 100vh;
 }
 
 header {
@@ -24,14 +26,14 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-image: url("./assets/banner.jpg");
+  color: var(--secondary-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
   z-index: 9999;
 }
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: var(--secondary-color);
   margin: 0;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 header a {
   text-decoration: none;
@@ -62,19 +64,25 @@ header nav ul li:hover {
 section {
   padding: 60px;
 }
-.works {
+.my-work {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    align-items: left;
+    justify-content: start;
+}
+.work-wrapper {
+  flex: 1;
+  min-width: 25%;
+  max-width: 25%;
+
 }
 .work {
-  width: 49.5%;
+  min-height: 200px;
   text-align: center;
   margin: 5px 0;
   opacity: 0.5;
   background-size: cover;
-  background-attachment: fixed;
+  border: solid 3px #111111;
 }
 .work:hover {
   opacity: 1;
@@ -103,14 +111,16 @@ section {
 
 footer {
   background: var(--primary-color);
+  color: var(--secondary-color);
   width: 100%;
-  padding: 40px 35px;
+  padding: 30px 25px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
 }
 footer h2 {
-  color: var(--secondary-color);
   font-size: 30px;
   margin: 0;
 }
@@ -154,6 +164,9 @@ footer a {
   address div {
       flex: 0;
   }
+  .work-wrapper {
+    flex: 2;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS */
@@ -173,13 +186,13 @@ footer a {
   .intro {
       justify-content: center;
   }
-  .work {
-      width: 100%;
+  .work-wrapper {
+      flex: 1;
   }
   .work-title {
       width: 50%;
   }
-  .works {
+  .work-wrapper {
       justify-content: center;
   }
   .contact {
@@ -199,5 +212,8 @@ footer a {
   }
   address p {
       width: 80%;
+  }
+  .work .work-title {
+    width: 80%;
   }
 }
