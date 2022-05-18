@@ -5,7 +5,7 @@ function Footer() {
         <footer>
             <h2>Made by zk229</h2>
             <div>
-                <a href="/">Check Out My Portfolio!</a><br />
+                <a href="/react-portfolio">Check Out My Portfolio!</a><br />
                 &copy; 2022 zk229
             </div>
         </footer>
