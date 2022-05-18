@@ -67,14 +67,13 @@ section {
 .my-work {
     display: flex;
     flex-wrap: wrap;
-    align-items: left;
+    align-items: center;
     justify-content: start;
 }
 .work-wrapper {
   flex: 1;
   min-width: 25%;
   max-width: 25%;
-
 }
 .work {
   min-height: 200px;
@@ -117,7 +116,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 footer h2 {
@@ -165,7 +164,9 @@ footer a {
       flex: 0;
   }
   .work-wrapper {
-    flex: 2;
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
   }
 }
 
@@ -187,7 +188,9 @@ footer a {
       justify-content: center;
   }
   .work-wrapper {
-      flex: 1;
+    flex: 1;
+    min-width: 100%;
+    max-width: 100%;
   }
   .work-title {
       width: 50%;
