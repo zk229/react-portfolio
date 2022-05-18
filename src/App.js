@@ -4,6 +4,7 @@ import About from "./components/About";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
 function App() {
   const [projects] = useState([
@@ -54,7 +55,8 @@ function App() {
           {
             "about": <About />,
             "projects": <Project projects={projects} />,
-            "contact": <Contact />
+            "contact": <Contact />,
+            "resume": <Resume />
           }[selection]
         }
       </main>

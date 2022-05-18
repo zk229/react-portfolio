@@ -39,7 +39,7 @@ header a {
   color: var(--secondary-color);
 }
 header nav {
-  margin: 7px 0;
+  margin: 7px 7px 7px 0;
 }
 header nav ul {
   display: flex;
@@ -49,16 +49,19 @@ header nav ul {
   list-style: none;
 }
 header nav ul li {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
-}
-header nav ul li:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  opacity: 0.5;
+}
+header nav ul li:hover {
+  opacity: 1
 }
 section {
   padding: 60px;
@@ -135,6 +138,26 @@ footer div {
 }
 footer a {
   color: var(--secondary-color);
+}
+label {
+  padding: 0 5px 0 0
+}
+textarea {
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+}
+button {
+  background: var(--tertiary-color);
+  border: 0;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOPS */

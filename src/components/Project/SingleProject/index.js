@@ -5,7 +5,7 @@ function SingleProject(props) {
 
     return (
         <a href={project.url} className="work-wrapper">
-            <div className="work" style={{ backgroundImage: `url(/img/box-${project.id}.png)` }}>
+            <div className="work" style={{ backgroundImage: `url(../img/box-${project.id}.png)` }}>
                 <h4 className="work-title">{project.name}</h4>
             </div>
         </a>

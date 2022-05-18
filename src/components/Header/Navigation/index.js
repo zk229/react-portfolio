@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Navigation(props) {
     const { selection, setSelection } = props;
-    const options = ["About", "Projects", "Contact"]
+    const options = ["About", "Projects", "Contact", "Resume"]
 
     return (
         <nav>
