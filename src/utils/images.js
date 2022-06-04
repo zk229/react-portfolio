@@ -1,3 +1,4 @@
+import box0 from "../assets/box-0.png";
 import box1 from "../assets/box-1.png";
 import box2 from "../assets/box-2.png";
 import box3 from "../assets/box-3.png";
@@ -11,7 +12,7 @@ import box10 from "../assets/box-10.png";
 import box11 from "../assets/box-11.png";
 
 const boxes = [
-    box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11
+    box0, box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11
 ];
 
 export default boxes;
