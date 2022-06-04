@@ -9,6 +9,13 @@ import Resume from "./components/Resume";
 function App() {
   const [projects] = useState([
     {
+      name: "RefreshR",
+      url: "https://mighty-reef-66523.herokuapp.com",
+      repository: "https://github.com/zk229/refreshr",
+      technologies: ["MongoDB", "Express", "React", "Node"],
+      id: 0
+    },
+    {
       name: "Social Network API",
       url: "https://github.com/zk229/social-network-api",
       repository: "https://github.com/zk229/social-network-api",
